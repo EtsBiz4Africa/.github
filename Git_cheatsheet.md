@@ -1,3 +1,8 @@
+# Working with branches
+## Compare specific file in two branches
+
+```
+```
 # Working with submodules
 ## Reset modified submodules
 ```

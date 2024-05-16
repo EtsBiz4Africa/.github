@@ -1,4 +1,15 @@
 # Working with branches
+## Add remote branch
+> Initial clone was like
+> ```
+> git clone --depth 1 --branch <branch1>
+> ```
+
+```
+git remote set-branches --add origin <branch2>
+git fetch origin
+git checkout <branch2>
+```
 ## Compare specific file in two branches
 
 ```

@@ -13,6 +13,7 @@ git checkout <branch2>
 ## Compare specific file in two branches
 
 ```
+git diff <branch1> <branch2> path/to/file
 ```
 # Working with submodules
 ## Reset modified submodules

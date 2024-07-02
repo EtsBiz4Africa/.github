@@ -10,6 +10,13 @@ git remote set-branches --add origin <branch2>
 git fetch origin
 git checkout <branch2>
 ```
+## Delete branches no longer on remote
+```
+git fetch -p
+for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do
+  git branch -D $branch
+done
+```
 ## Compare specific file in two branches
 
 ```

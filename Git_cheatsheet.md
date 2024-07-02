@@ -13,7 +13,7 @@ git checkout <branch2>
 ## Delete branches no longer on remote
 ```
 git fetch -p
-for branch in $(git branch -vv | grep ': gone]' | awk '{print $1}'); do
+for branch in $(git branch -vv | grep -E '(: gone\]|: disparue\])' | awk '{print $1}'); do
   git branch -D $branch
 done
 ```
